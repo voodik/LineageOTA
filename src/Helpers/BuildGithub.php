@@ -50,7 +50,7 @@
                 // Split all Assets because they are not properly sorted
                 foreach( $release['assets'] as $asset ) {
                     switch( $asset['content_type'] ) {
-                        case 'application/zip':
+                        case 'application/x-zip-compressed':
                             array_push( $archives, $asset );
 
                             break;

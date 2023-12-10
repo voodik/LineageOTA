@@ -56,6 +56,7 @@
             $request = curl_init( $this->url );
 
             curl_setopt( $request, CURLOPT_RETURNTRANSFER, true );
+            curl_setopt( $request, CURLOPT_FOLLOWLOCATION, true );
             curl_setopt( $request, CURLOPT_HTTPHEADER, $this->header );
 
             $this->response = curl_exec( $request );
